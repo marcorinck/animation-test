@@ -1,0 +1,19 @@
+<h1>
+  {{title}}
+</h1>
+
+
+<button md-raised-button (click)="changeColor('red')">Change color to red</button>
+<button md-raised-button (click)="changeColor('green')">Change color to green</button>
+<button md-raised-button (click)="changeColor('blue')">Change color to blue</button>
+
+<br/><br/>
+
+<md-card [@background]="color">
+  <md-card-content>
+    <div >
+      This is a color changing test
+    </div>
+
+  </md-card-content>
+</md-card>

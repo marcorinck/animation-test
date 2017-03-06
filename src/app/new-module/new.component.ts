@@ -2,9 +2,9 @@ import {trigger, state, style, transition, animate} from '@angular/animations';
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'new-component',
+  templateUrl: 'new.component.html',
+  styleUrls: ['new.component.css'],
   animations: [
     trigger('background', [
       state('red', style({
@@ -28,8 +28,8 @@ import {Component} from '@angular/core';
     ])
   ]
 })
-export class AppComponent {
-  title = 'app works!';
+export class NewComponent {
+  title = 'new component works!';
 
   color = "white";
 
